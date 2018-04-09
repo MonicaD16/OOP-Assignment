@@ -1,15 +1,11 @@
 
 package shape2d;
 
-import java.util.Scanner;
-
 public class Rectangle extends Shape2D {
     private final double length, width; 
 
-    public Rectangle(Scanner scanner) {
-    
-        
-        
+    public Rectangle() {
+       
         this(1,1);
    
     }
