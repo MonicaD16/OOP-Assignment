@@ -6,9 +6,6 @@ public class Circle extends Shape2D {
     private final double radius;
 
 
-    public Circle() {
-        this(1);
-    }   
     public Circle(double radius) {
         this.radius = radius;
     }
