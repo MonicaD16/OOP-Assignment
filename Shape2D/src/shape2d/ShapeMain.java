@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class ShapeMain {
     public static void main(String[] args) {
         
-        Scanner widthInput = new Scanner(System.in);
+        Scanner userInput = new Scanner(System.in);
         System.out.println("Enter the width of the rectangle: ");
-        double width = widthInput.nextInt();
+        double width = userInput.nextInt();
         
         System.out.println("Enter the length of the rectangle: ");
-        double length = widthInput.nextInt();
+        double length = userInput.nextInt();
         
         Shape2D rectangle = new Rectangle(width, length);
         System.out.println("Rectangle width: " + width + " and length: " + length
@@ -20,7 +20,7 @@ public class ShapeMain {
                 + "\nPerimeter of rectangle: " + rectangle.perimeter() + "\n");
 
         System.out.println("Enter the radius of the circle. ");
-        double radius = widthInput.nextInt();
+        double radius = userInput.nextInt();
         
         Shape2D circle = new Circle(radius);
         System.out.println("Circle radius: " + radius
@@ -28,13 +28,13 @@ public class ShapeMain {
             + "\nPerimeter of circle: " + circle.perimeter() + "\n");
 
         System.out.println("Enter side A of the triangle: ");
-        double sideA = widthInput.nextInt();
+        double sideA = userInput.nextInt();
         
         System.out.println("Enter side B of the triangle: ");
-        double sideB = widthInput.nextInt();
+        double sideB = userInput.nextInt();
         
         System.out.println("Enter side C of the triangle: ");
-        double sideC = widthInput.nextInt();
+        double sideC = userInput.nextInt();
         
         Shape2D triangle = new Triangle(sideA, sideB, sideC);
         System.out.println("Triangle sides lengths: " + sideA + ", " + sideB + ", " + sideC
